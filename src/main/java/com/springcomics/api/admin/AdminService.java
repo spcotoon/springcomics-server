@@ -16,6 +16,7 @@ import java.util.List;
 
 @Service
 public class AdminService {
+
     private final String adminId;
     private final String adminPw;
     private final String adminName;
