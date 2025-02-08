@@ -23,9 +23,6 @@ public class User extends DateOnlyBaseEntity {
 
     private boolean emailVerified = false;
 
-    //todo 관심웹툰, 별점?등 추가..
-
-
     @Builder
     public User(String email, String password, String nickname) {
         this.email = email;
