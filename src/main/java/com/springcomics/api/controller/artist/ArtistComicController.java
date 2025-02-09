@@ -35,7 +35,7 @@ public class ArtistComicController {
         String fileExtension = getFileExtension(request.getThumbnail());
         String uniqueFileName = generateUniqueFileName(request.getThumbnail(), fileExtension);
 
-        String s3Path = "test/" + uniqueFileName;
+        String s3Path = "comics/" + uniqueFileName;
 
         String presignedUrl = s3Service.createPresignedUrl(s3Path);
 
@@ -52,7 +52,7 @@ public class ArtistComicController {
             String fileExtension = getFileExtension(fileName);
             String uniqueFileName = generateUniqueFileName(fileName, fileExtension);
 
-            String s3Path = "test/" + uniqueFileName;
+            String s3Path = "comics/" + uniqueFileName;
 
             String presignedUrl = s3Service.createPresignedUrl(s3Path);
             presignedUrls.add(presignedUrl);
@@ -67,7 +67,7 @@ public class ArtistComicController {
         String fileExtension = getFileExtension(request.getThumbnailUrl());
         String uniqueFileName = generateUniqueFileName(request.getThumbnailUrl(), fileExtension);
 
-        String s3Path = "test/" + uniqueFileName;
+        String s3Path = "comics/" + uniqueFileName;
 
         String presignedUrl = s3Service.createPresignedUrl(s3Path);
 

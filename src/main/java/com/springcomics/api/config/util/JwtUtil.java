@@ -39,7 +39,7 @@ public class JwtUtil {
 
         CustomUser user = (CustomUser) auth.getPrincipal();
         String authorities = auth.getAuthorities().stream().map(GrantedAuthority::getAuthority).collect(Collectors.joining(","));
-        
+
         return Jwts.builder()
                 .claim("email", user.getUsername())
                 .claim("displayName", user.getDisplayName())
@@ -111,7 +111,8 @@ public class JwtUtil {
         cookie.setHttpOnly(true);
         cookie.setPath("/");
         cookie.setMaxAge(24 * 60 * 60 * 1000);
-        cookie.setSecure(false);
+        cookie.setSecure(true);
+        cookie.setAttribute("SameSite", "None");
         return cookie;
     }
 
@@ -120,6 +121,8 @@ public class JwtUtil {
         cookie.setHttpOnly(true);
         cookie.setPath("/");
         cookie.setMaxAge(0);
+        cookie.setSecure(true);
+        cookie.setAttribute("SameSite", "None");
         response.addCookie(cookie);
     }
 
@@ -128,7 +131,8 @@ public class JwtUtil {
         cookie.setMaxAge(0);
         cookie.setPath("/");
         cookie.setHttpOnly(true);
-
+        cookie.setSecure(true);
+        cookie.setAttribute("SameSite", "None");
         return cookie;
     }
 }

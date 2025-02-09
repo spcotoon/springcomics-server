@@ -35,7 +35,8 @@ public class JwtFilter extends OncePerRequestFilter {
             "/admin/auth/login",
             "/admin/auth/logout",
             "/springcomics/comics",
-            "/springcomics/pf-comics"
+            "/springcomics/pf-comics",
+            "/health"
     );
 
     @Override
