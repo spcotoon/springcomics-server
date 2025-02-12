@@ -42,7 +42,7 @@
 
 | 유저 페이지 | 작가 페이지 | 어드민 페이지 |
 | ----- | ----- | ----- |
-||![image](https://github.com/user-attachments/assets/f8761566-e8e1-4dd0-b697-cbc14d63c9a4)|![image](https://github.com/user-attachments/assets/0855f479-a164-4b09-97a9-654c287b6489)|
+|![image](https://github.com/user-attachments/assets/63f91eb0-7fb3-4409-a87f-b7cca6cebbab)|![image](https://github.com/user-attachments/assets/f8761566-e8e1-4dd0-b697-cbc14d63c9a4)|![image](https://github.com/user-attachments/assets/0855f479-a164-4b09-97a9-654c287b6489)|
 
 
 ### 아키텍쳐
