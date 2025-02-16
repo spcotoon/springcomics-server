@@ -1,5 +1,12 @@
 ﻿# springcomics-server
  <p>공부한 것을 만화로 그리며 복습하려 만든 웹툰 연재 사이트 서버입니다.</p>
+ <br/>
+ <p>만화 열람 체험 아이디</p>
+ <p>ID:a@a.com</p>
+ <p>PW:12312311</p>
+ 
+  [배포 완료 페이지](https://springcomicsportfolioapi.com/)
+
 
 ## 🚀 기술 스택
 ### ⚡백엔드
